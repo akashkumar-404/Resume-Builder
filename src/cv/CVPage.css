@@ -1,0 +1,15 @@
+/* CVPage.css */
+.cv-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 15px;
+    margin-top: 5%;
+    border-radius: 5px;
+  }
+  .cv-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
