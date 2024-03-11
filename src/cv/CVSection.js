@@ -1,6 +1,6 @@
 // CVSection.js
 import React from 'react';
-import './CVSection.css'; 
+import './CVSection.css';
 
 const CVSection = ({ title, data }) => {
   return (

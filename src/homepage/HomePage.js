@@ -1,9 +1,9 @@
 // HomePage.js
 import React from 'react';
-import CVSection from '../CVSection'; 
+import CVSection from '../CVSection';
 
 const HomePage = () => {
-  
+
   return (
     <div>
       <h1>CV Generator</h1>

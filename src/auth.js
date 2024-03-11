@@ -18,7 +18,7 @@ export function useAuth() {
     };
 
     const logout = () => {
-       
+
         setlogOut();
     };
 

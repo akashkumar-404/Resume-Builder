@@ -12,24 +12,24 @@ const LoginPage = (props) => {
   const [error, setError] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
-  const [loginChecker,setLoginChecker] = useState(false)
-  
+  const [loginChecker, setLoginChecker] = useState(false)
+
   // console.log(isLoggedIn)
-  useEffect(()=>{
+  useEffect(() => {
     const isLoggedIn = getLogIn();
     setLoginChecker(isLoggedIn)
-  },[loginChecker])
+  }, [loginChecker])
   const handleLogin = () => {
     // debugger
     // const isLoggedIn = getLogIn();
     login(username, password);
     console.log(loginChecker)
     let loginCk = getLogIn();
-    if (loginCk==true) {
+    if (loginCk == true) {
       //setLogIn();
       props.setLoginCheckIn(true)
       navigate('/admin');
-    } if(loginCk==false) {
+    } if (loginCk == false) {
       setError('Incorrect username or password');
     }
   };

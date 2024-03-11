@@ -12,17 +12,17 @@ const AdminPage = () => {
   const [isDataSaved, setIsDataSaved] = useState(false);
 
   const handleSave = () => {
-   
+
     localStorage.setItem('personalInfo', personalInfo);
     localStorage.setItem('education', education);
     localStorage.setItem('workExperience', workExperience);
     localStorage.setItem('skills', skills);
     alert('Data saved successfully!');
-    
+
     setIsDataSaved(true);
   };
 
-  
+
   if (isDataSaved) {
     return <Navigate to="/cv" />;
   }
@@ -32,7 +32,7 @@ const AdminPage = () => {
       <h2>CV Editing</h2>
       <div className="cv-section">
         <label>Personal Information:</label>
-        <TextareaAutosize minRows={4}  value={personalInfo} onChange={(e) => setPersonalInfo(e.target.value)} />
+        <TextareaAutosize minRows={4} value={personalInfo} onChange={(e) => setPersonalInfo(e.target.value)} />
       </div>
       <div className="cv-section">
         <label>Education:</label>
