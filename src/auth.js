@@ -18,13 +18,11 @@ export function useAuth() {
     };
 
     const logout = () => {
-        // Implement your logout logic here
+       
         setlogOut();
     };
 
-    // console.log(isLoggedIn)
     return {
-        // isLoggedIn,
         login,
         logout
     };

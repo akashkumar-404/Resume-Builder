@@ -9,20 +9,20 @@ const AdminPage = () => {
   const [education, setEducation] = useState(localStorage.getItem('education') || '');
   const [workExperience, setWorkExperience] = useState(localStorage.getItem('workExperience') || '');
   const [skills, setSkills] = useState(localStorage.getItem('skills') || '');
-  const [isDataSaved, setIsDataSaved] = useState(false); // Track whether data is saved
+  const [isDataSaved, setIsDataSaved] = useState(false);
 
   const handleSave = () => {
-    // Save modified data to local storage
+   
     localStorage.setItem('personalInfo', personalInfo);
     localStorage.setItem('education', education);
     localStorage.setItem('workExperience', workExperience);
     localStorage.setItem('skills', skills);
     alert('Data saved successfully!');
-    // Set isDataSaved to true to trigger redirection
+    
     setIsDataSaved(true);
   };
 
-  // Redirect to the CV page if data is saved
+  
   if (isDataSaved) {
     return <Navigate to="/cv" />;
   }

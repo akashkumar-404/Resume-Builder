@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import LoginPage from './login/LoginPage';
 import AdminPage from './admin/AdminPage';
 import CVPage from './cv/CVPage';
-import { useAuth } from './auth'; // Import useAuth hook for authentication
+import { useAuth } from './auth';
 import { getLogIn, setlogOut } from './Utils/common';
 
 function App() {

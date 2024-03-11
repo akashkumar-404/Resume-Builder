@@ -1,9 +1,9 @@
 // HomePage.js
 import React from 'react';
-import CVSection from '../CVSection'; // Import CVSection component
+import CVSection from '../CVSection'; 
 
 const HomePage = () => {
-  // Fetch and display data from local storage for each CV section
+  
   return (
     <div>
       <h1>CV Generator</h1>

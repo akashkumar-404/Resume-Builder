@@ -1,13 +1,13 @@
 // CVPage.js
 import React from 'react';
-import CVSection from './CVSection'; // Import CVSection component
-import './CVPage.css'; // Import CSS file for styling
+import CVSection from './CVSection'; 
+import './CVPage.css'; 
 import { getLogIn, setLogIn, setlogOut } from '../Utils/common';
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
 const CVPage = () => {
-  // Fetch saved data from local storage
+ 
   const personalInfo = localStorage.getItem('personalInfo') || '';
   const education = localStorage.getItem('education') || '';
   const workExperience = localStorage.getItem('workExperience') || '';
